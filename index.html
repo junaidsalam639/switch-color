@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color Change</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button><i class="fa-sharp fa-solid fa-gear"></i>switch color</button>
+    <script type="text/javascript">
+        var color =["#2c3e50","#8e44ad","#3498db","#27ae60","#d35400","#f1c40f","#16a085", "#ffb8b8", "#67e6dc", "#18dcff"];
+        var i =0;
+        document.querySelector("button").addEventListener("click",
+        function(){
+            i = i < color.length ? ++i : 0;
+            document.querySelector("body").style.background = color[i]
+        });
+    </script>
+</body>
+</html>
